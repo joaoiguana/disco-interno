@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  resources :artists do
-    resources :albums do
-      resources :tracks
-    end
-  end
+  resources :artists
+  resources :albums
+  resources :tracks
+
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
