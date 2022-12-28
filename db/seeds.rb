@@ -5,7 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+puts 'Deleting all the entries from the DB...'
+Artist.delete_all
+Album.delete_all
+Track.delete_all
 
+puts 'Seeding information...'
 # ARTISTAS
 # IGUANA GARCIA
 iguana_garcia = Artist.create!(name: 'Iguana Garcia', bio: "Iguana Garcia é um produtor e multi-instrumentista português. Embaixador do 'dolce far niente' lisboeta enquanto dono de uma singular visão electrónica pop experimental. Iguana apresenta-se em palco com uma ilha de teclados e guitarras flaureados pelo saxofone tenor de João Santos. Nas cabines, seleciona tribalismos house produzidos pelo próprio.")
@@ -24,3 +29,5 @@ Track.create!(title: 'Fixação', tracks_number: 7, artist: iguana_garcia, album
 Track.create!(title: 'Matrix da Pátria', tracks_number: 8, artist: iguana_garcia, album: ilha_da_iguana)
 Track.create!(title: 'A Gruta', tracks_number: 9, artist: iguana_garcia, album: ilha_da_iguana)
 Track.create!(title: 'Bolero Digital', tracks_number: 10, artist: iguana_garcia, album: ilha_da_iguana)
+
+puts 'Done!'
