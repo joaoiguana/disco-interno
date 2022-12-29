@@ -8,6 +8,7 @@ const Artists = (props) => {
         return (
               <div key={artist.id}>
                 <h2>{artist.name}</h2>
+                <img src={artist.photos} alt="artist" />
               </div>
         );
       })}
