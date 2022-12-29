@@ -1,41 +1,32 @@
-import React, { useState } from 'react';
-import './App.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Artists from './components/Artists/Artists';
-import Albums from './components/Albums/Albums';
-import Tracks from './components/Tracks/Tracks';
-import Home from './components/Home/Home';
+import React, { useState } from 'react'
+import logo from './logo.svg'
+import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/artists">Artists</Link>
-            </li>
-            <li>
-              <Link to="/albums">Albums</Link>
-            </li>
-            <li>
-              <Link to="/tracks">Tracks</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Route path="/" exact component={Home} />
-        <Route path="/artists" component={Artists} />
-        <Route path="/albums" component={Albums} />
-        <Route path="/tracks" component={Tracks} />
-      </div>
-    </Router>
-  );
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>Hello Vite + React!</p>
+        <p>
+          <button onClick={() => setCount(count => count + 1)}>count is: {count}</button>
+        </p>
+        <p>
+          Edit <code>App.jsx</code> and save to test HMR updates.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  )
 }
 
 export default App
