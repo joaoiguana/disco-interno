@@ -1,32 +1,33 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React, { useEffect, useState } from 'react';
+import './App.css';
+import axios from 'axios';
+import Artists from './components/Artists/Artists';
 
-function App() {
-  const [count, setCount] = useState(0)
+const API_URL = 'http://localhost:3000/artists';
+
+const getAPIData = () => {
+  return axios.get(API_URL).then((response) => response.data)
+}
+
+const App = () => {
+  const [artists, setArtists] = useState([]);
+
+  useEffect(() => {
+    let mounted = true;
+    getAPIData().then((items) => {
+      if (mounted) {
+        setArtists(items);
+      }
+    });
+    return () => (mounted = false) ;
+  }, []);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button onClick={() => setCount(count => count + 1)}>count is: {count}</button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Disco Interno</h1>
+      <Artists artists={artists} />
     </div>
   )
 }
 
-export default App
+export default App;
