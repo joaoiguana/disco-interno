@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Artists from './components/Artists/Artists';
-import ArtistsDetail from './components/Artists/ArtistsDetails';
+import ArtistsDetail from './components/Artists/ArtistsDetail';
 import Albums from './components/Albums/Albums';
 import AlbumsDetail from './components/Albums/AlbumsDetail';
 import Tracks from './components/Tracks/Tracks';
