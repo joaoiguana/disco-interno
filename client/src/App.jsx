@@ -1,32 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
-import axios from 'axios';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
 import Artists from './components/Artists/Artists';
-
-const API_URL = 'http://localhost:3000/artists';
-
-const getAPIData = () => {
-  return axios.get(API_URL).then((response) => response.data)
-}
+import ArtistsDetail from './components/Artists/ArtistsDetails';
+import Albums from './components/Albums/Albums';
+import AlbumsDetail from './components/Albums/AlbumsDetail';
+import Tracks from './components/Tracks/Tracks';
+import TracksDetail from './components/Tracks/TracksDetail';
+import Home from './components/Home/Home'
 
 const App = () => {
-  const [artists, setArtists] = useState([]);
-
-  useEffect(() => {
-    let mounted = true;
-    getAPIData().then((items) => {
-      if (mounted) {
-        setArtists(items);
-      }
-    });
-    return () => (mounted = false) ;
-  }, []);
 
   return (
-    <div className="App">
-      <h1>Disco Interno</h1>
-      <Artists artists={artists} />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/artists' element={<Artists />} />
+          <Route path='/artists/:id' element={<ArtistsDetail />} />
+          <Route exact path='/albums' element={<Albums />} />
+          <Route path='/albums/:id' element={<AlbumsDetail />} />
+          <Route exact path='/tracks' element={<Tracks />} />
+          <Route path='/tracks/:id' element={<TracksDetail />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
