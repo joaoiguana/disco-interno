@@ -20,9 +20,15 @@ const TracksDetail = () => {
     return () => (mounted = false) ;
   }, []);
 
+  if (track.artist_id === 1 && track.album_id === 1) {
+    return (track.artist_id = 'Iguana Garcia', track.album_id = 'Ilha Da Iguana');
+  } else if (track.artist_id === 2 && track.album_id === 2) {
+    return (track.artist_id = 'Yakuza', track.album_id = 'Aileron');
+  }
+
   return (
     <div>
-      <h3>{track.tracks_number} - {track.title}</h3>
+      <h3>{track.tracks_number} - {track.title} ({track.album_id}, {track.artist_id})</h3>
     </div>
   );
 }
