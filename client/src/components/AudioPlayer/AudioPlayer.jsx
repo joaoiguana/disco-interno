@@ -14,8 +14,8 @@ const AudioPlayer = ({ audioUrl }) => {
   return (
     <div>
       <audio ref={audioElement} src={audioUrl} />
-      <button onClick={play}>Play</button>
-      <button onClick={pause}>Pause</button>
+      <button onClick={play}><i class="fa-solid fa-play"></i></button>
+      <button onClick={pause}><i class="fa-solid fa-pause"></i></button>
     </div>
   );
 };

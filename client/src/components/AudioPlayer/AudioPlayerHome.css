@@ -1,0 +1,83 @@
+.card {
+  width: 18.75rem;
+}
+
+.music-widget {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+}
+
+.art {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.song-info {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  align-self: end;
+  background-color: rgba(100%, 100%, 100%, 60%);
+  backdrop-filter: blur(0.25rem);
+}
+
+.text {
+  margin: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .song-title {
+  animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(100%)
+  }
+  to {
+    transform: translateX(-150%)
+  }
+} */
+
+.toolbar {
+  padding: 0;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+}
+
+.button-previous-next {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+}
+
+.button-play {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: #ff679f;
+}
+
+i {
+  font-size: 1.2rem;
+}
+
+.uil-play {
+  margin-left: 0.25rem;
+}

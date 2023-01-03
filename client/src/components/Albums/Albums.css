@@ -1,0 +1,9 @@
+.album-player {
+  display: flex;
+  align-items: center;
+  margin-left: 45vw;
+}
+
+.album-title {
+  text-decoration: none;
+}

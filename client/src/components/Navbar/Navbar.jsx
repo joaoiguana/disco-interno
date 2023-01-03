@@ -1,13 +1,14 @@
 import React from 'react';
 import '../../App.css'
 import { Link } from 'react-router-dom';
+import './Navbar.css'
 
 const Navbar = () => {
   return (
     <nav>
-      <Link exact to="/">Home</Link>
-      <Link to="/artists">Artists</Link>
-      <Link to="/albums">Albums</Link>
+      <Link exact to="/"><img src="https://res.cloudinary.com/doa9kh79y/image/upload/v1672756012/disco%20interno/logo/Logo-1366x768px_j9uybj.png" alt="logo-discointerno"  className='logo'/></Link>
+      <Link to="/artists" className='nav-menus'>Artists</Link>
+      <Link to="/albums" className='nav-menus'>Albums</Link>
       {/* <Link to="/tracks">Tracks</Link> */}
     </nav>
   )

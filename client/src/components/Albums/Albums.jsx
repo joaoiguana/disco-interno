@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './Albums.css';
 
 const API_URL = 'http://localhost:3000/albums';
 
@@ -23,11 +24,10 @@ const Albums = () => {
 
   return (
     <div>
-      <h3>This are the albums</h3>
       {albums.map((album) => {
         return (
               <div key={album.id}>
-                <Link to={`/albums/${album.id}`}>
+                <Link to={`/albums/${album.id}`} className='album-title'>
                   <h2>{album.title} ({album.year})</h2>
                 </Link>
               </div>

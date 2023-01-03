@@ -8,11 +8,11 @@ const AlbumsDetail = () => {
   const [tracks, setTracks] = useState([]);
   const { id } = useParams();
 
-  const getAPIData = () => {
+  const getAPIData = async () => {
     return axios.get(`http://localhost:3000/albums/${id}`).then((response) => response.data)
   }
 
-  const getTracks = () => {
+  const getTracks = async () => {
     return axios.get(`http://localhost:3000/tracks`).then((response) => response.data)
   }
 
@@ -36,9 +36,9 @@ const AlbumsDetail = () => {
     return () => (mounted = false) ;
   }, []);
 
-  if (album.artist_id === 1) {
+  if (album.artist_id === 3) {
     return album.artist_id = 'Yakuza';
-  } else if (album.artist_id === 2) {
+  } else if (album.artist_id === 4) {
     return album.artist_id = 'Iguana Garcia';
   }
 
@@ -52,7 +52,7 @@ const AlbumsDetail = () => {
       <p>{album.genre}</p>
       {filteredTracks.map((tracks) => {
         return (
-          <div className='track-player' key={tracks.id}>
+          <div className='album-player' key={tracks.id}>
             {/* <button><i class="fa-solid fa-play"></i></button> */}
             <AudioPlayer audioUrl={tracks.audio_url} />
             <p >{tracks.tracks_number} - {tracks.title}</p>
