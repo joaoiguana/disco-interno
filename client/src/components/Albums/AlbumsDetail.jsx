@@ -36,10 +36,12 @@ const AlbumsDetail = () => {
   }, []);
 
   if (album.artist_id === 1) {
-    return album.artist_id = 'Iguana Garcia';
-  } else if (album.artist_id === 2) {
     return album.artist_id = 'Yakuza';
+  } else if (album.artist_id === 2) {
+    return album.artist_id = 'Iguana Garcia';
   }
+
+  let filteredTracks = tracks.filter(track => track.album_id === album.id);
 
   return (
     <div>
@@ -47,7 +49,7 @@ const AlbumsDetail = () => {
       <h4>{album.artist_id}</h4>
       <p>{album.description} - {album.catalog_number}</p>
       <p>{album.genre}</p>
-      {tracks.map((tracks) => {
+      {filteredTracks.map((tracks) => {
         return (
           <div className='track-player'>
             {/* <button><i class="fa-solid fa-play"></i></button> */}
