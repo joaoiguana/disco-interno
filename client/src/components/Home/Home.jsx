@@ -21,17 +21,16 @@ const Home = () => {
   }, []);
 
   console.log(tracks);
-  const audioUrls = tracks.map(track => track.audio_url);
 
-  console.log(audioUrls)
+  let randomIndex = Math.floor(Math.random() * tracks.length);
 
-  // const randomTrack = audioURL[Math.floor(Math.random() * audioURL.length)];
+  const track = tracks[randomIndex];
 
-  // console.log(randomTrack);
+  console.log(track)
 
   return (
     <div className='home-main'>
-      <AudioPlayerHome albumTitle={'Aileron'} artistName={'Yakuza'} />
+      <AudioPlayerHome albumTitle={'Aileron Pt.I'} artistName={'Yakuza'} />
     </div>
   )
 }
