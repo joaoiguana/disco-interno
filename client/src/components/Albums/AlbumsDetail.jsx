@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import AudioPlayer from '../AudioPlayer/AudioPlayer';
 
 const AlbumsDetail = () => {
   const [album, setAlbum] = useState([]);
@@ -51,9 +52,10 @@ const AlbumsDetail = () => {
       <p>{album.genre}</p>
       {filteredTracks.map((tracks) => {
         return (
-          <div className='track-player'>
+          <div className='track-player' key={tracks.id}>
             {/* <button><i class="fa-solid fa-play"></i></button> */}
-            <p key={tracks.id}>{tracks.tracks_number} - {tracks.title}</p>
+            <AudioPlayer audioUrl={tracks.audio_url} />
+            <p >{tracks.tracks_number} - {tracks.title}</p>
           </div>
         )
       })}
