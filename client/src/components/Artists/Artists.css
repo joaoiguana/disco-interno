@@ -1,3 +1,23 @@
+.artists-grid {
+  display: grid;
+  grid-template-columns: 500px 100px 800px;
+  grid-template-rows: repeat(1.5, 1fr);
+  grid-template-areas:
+    "pic pic hidden1"
+    "hidden2 hidden2 bio";
+}
+
+@media only screen and (max-width: 1200px) {
+  .artists-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "pic"
+    "bio";
+    width: 100vw;
+  }
+}
+
 .artist-main {
   display: flex;
 }
@@ -13,13 +33,21 @@
 
 .artist-pic {
   width: 600px;
+  grid-area: pic;
+}
+
+.hiddenY {
+  opacity: 0;
+  grid-area: hidden1;
 }
 
 .invisible-box-left {
-  width: 600px;
+  /* width: 600px; */
+  grid-area: hidden2;
 }
 
 .artist-bio {
+  grid-area: bio;
   display: flex;
   flex-direction: column;
   text-align: left;

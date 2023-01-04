@@ -21,22 +21,18 @@ const ArtistsDetail = () => {
   }, []);
 
   return (
-    <div>
-      <div className='artist-main'>
-        <img src={artist.photo_url} alt="artist-pic"  className='artist-pic'/>
-        <h1 className='hidden'>Y</h1>
-      </div>
-      <div className='artist-main'>
+    <div className='artists-grid'>
+      <img src={artist.photo_url} alt="artist-pic"  className='artist-pic'/>
+      <h1 className='hiddenY'>Y</h1>
       <img src='https://res.cloudinary.com/doa9kh79y/image/upload/v1672853287/disco%20interno/design-tools/rectangle_fit_cefuua.jpg' alt="artist-pic"  className='artist-pic hidden'/>
-        <div className='artist-bio'>
-          <h3>{artist.name}</h3>
-          <p>{artist.bio}</p>
-          <div className='link-icons'>
-            <i className="fa-brands fa-spotify artists-icons"></i>
-            <i className="fa-brands fa-bandcamp artists-icons"></i>
-            <i className="fa-brands fa-soundcloud artists-icons"></i>
-            <i className="fa-brands fa-instagram artists-icons"></i>
-          </div>
+      <div className='artist-bio'>
+        <h3>{artist.name}</h3>
+        <p>{artist.bio}</p>
+        <div className='link-icons'>
+          <i className="fa-brands fa-spotify artists-icons"></i>
+          <i className="fa-brands fa-bandcamp artists-icons"></i>
+          <i className="fa-brands fa-soundcloud artists-icons"></i>
+          <i className="fa-brands fa-instagram artists-icons"></i>
         </div>
       </div>
     </div>
