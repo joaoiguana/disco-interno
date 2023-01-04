@@ -13,7 +13,7 @@ const AudioPlayerHome = ({ coverArtUrl, trackTitle, artistName, audioUrl }) => {
   };
 
   return (
-    <div className='card'>
+    <div className='card hidden'>
       <div className="music-widget">
         <img src={coverArtUrl} alt="album_cover" className='art'/>
         <div className="song-info">

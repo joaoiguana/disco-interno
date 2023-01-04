@@ -1,4 +1,9 @@
+/* .hidden {
+  opacity: 0;
+} */
+
 .card {
+  z-index: 2;
   width: 18.75rem;
 }
 
@@ -63,6 +68,7 @@ ul {
   border-radius: 50%;
   padding: 0;
   border: none;
+  cursor: pointer;
 }
 
 .button-play {
@@ -72,6 +78,7 @@ ul {
   padding: 0;
   border: none;
   background-color: #ff679f;
+  cursor: pointer;
 }
 
 i {

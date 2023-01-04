@@ -1,0 +1,7 @@
+.logo-circle {
+  width: 18.75rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

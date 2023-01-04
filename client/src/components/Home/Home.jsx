@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import AudioPlayerHome from '../AudioPlayer/AudioPlayerHome';
+import Logo from '../Logo/Logo'
 import './Home.css'
 
 const Home = () => {
@@ -34,8 +35,11 @@ const Home = () => {
   // };
 
   return (
-    <div className='home-main'>
-      <AudioPlayerHome coverArtUrl={'https://res.cloudinary.com/doa9kh79y/image/upload/v1672748272/disco%20interno/covers/aileron/AILERON-_-Yakuza-capa_kq8hb1.jpg'} trackTitle={'Aileron Pt.I'} artistName={'Yakuza'} audioUrl={'https://res.cloudinary.com/doa9kh79y/video/upload/v1672748440/disco%20interno/mp3/aileron/03_AILERON_-_Pt._II_xslszd.mp3'} />
+    <div className='home'>
+      <div className='home-main'>
+        <Logo />
+        <AudioPlayerHome coverArtUrl={'https://res.cloudinary.com/doa9kh79y/image/upload/v1672748272/disco%20interno/covers/aileron/AILERON-_-Yakuza-capa_kq8hb1.jpg'} trackTitle={'Aileron Pt.I'} artistName={'Yakuza'} audioUrl={'https://res.cloudinary.com/doa9kh79y/video/upload/v1672748440/disco%20interno/mp3/aileron/03_AILERON_-_Pt._II_xslszd.mp3'} />
+      </div>
     </div>
   )
 }

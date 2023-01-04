@@ -44,7 +44,7 @@ const AlbumsDetail = () => {
       <h3>{album.title} ({album.year}) - {album.catalog_number}</h3>
       <h4>{album.artist_name}</h4>
       <p>{album.description}</p>
-      <p>{album.genre}</p>
+      <p><i className="uil uil-music-note"></i> {album.genre}</p>
       {filteredTracks.map((tracks) => {
         return (
           <div className='album-player' key={tracks.id}>
