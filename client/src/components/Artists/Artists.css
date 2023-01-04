@@ -1,3 +1,7 @@
+.artist-main {
+  display: flex;
+}
+
 .artist-name {
   text-decoration: none;
   color: #333333;
@@ -5,4 +9,26 @@
 
 .artist-name:visited {
   color: #333333;
+}
+
+.artist-pic {
+  width: 600px;
+}
+
+.invisible-box-left {
+  width: 600px;
+}
+
+.artist-bio {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.link-icons {
+  display: flex;
+}
+
+.artists-icons{
+  margin-right: 0.5rem;
 }

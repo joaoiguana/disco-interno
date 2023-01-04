@@ -5,7 +5,7 @@ import './Artists.css'
 
 const API_URL = 'http://localhost:3000/artists';
 
-const getAPIData = () => {
+const getAPIData = async () => {
   return axios.get(API_URL).then((response) => response.data)
 }
 
