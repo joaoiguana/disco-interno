@@ -13,3 +13,11 @@ nav {
   color: #333333;
   text-decoration: none;
 }
+
+.nav-logo {
+  margin-left: 0.5rem;
+}
+
+.nav-album {
+  margin-right: 0.5rem;
+}
