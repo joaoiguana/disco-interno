@@ -46,6 +46,6 @@ class ArtistsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def artist_params
-      params.require(:artist).permit(:name, :bio, photos: [])
+      params.require(:artist).permit(:name, :bio, :photo_url)
     end
 end
