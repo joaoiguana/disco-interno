@@ -20,17 +20,22 @@ const Home = () => {
     return () => (mounted = false) ;
   }, []);
 
-  console.log(tracks);
-
   let randomIndex = Math.floor(Math.random() * tracks.length);
 
   const track = tracks[randomIndex];
 
   console.log(track)
 
+  // const props = {
+  //   coverArtUrl: track.photo_url,
+  //   trackTitle: track.title,
+  //   artistName: track.artist_id,
+  //   audioUrl: track.audio_url
+  // };
+
   return (
     <div className='home-main'>
-      <AudioPlayerHome albumTitle={'Aileron Pt.I'} artistName={'Yakuza'} />
+      <AudioPlayerHome coverArtUrl={'https://res.cloudinary.com/doa9kh79y/image/upload/v1672748272/disco%20interno/covers/aileron/AILERON-_-Yakuza-capa_kq8hb1.jpg'} trackTitle={'Aileron Pt.I'} artistName={'Yakuza'} audioUrl={'https://res.cloudinary.com/doa9kh79y/video/upload/v1672748440/disco%20interno/mp3/aileron/03_AILERON_-_Pt._II_xslszd.mp3'} />
     </div>
   )
 }

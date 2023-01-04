@@ -1,3 +1,8 @@
 .artist-name {
   text-decoration: none;
+  color: #333333;
+}
+
+.artist-name:visited {
+  color: #333333;
 }

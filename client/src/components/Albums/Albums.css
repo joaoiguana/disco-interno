@@ -4,6 +4,29 @@
   margin-left: 45vw;
 }
 
+@media (max-width: 800px) {
+  .album-player {
+    margin-left: 25vw;
+  }
+}
+
+@media (max-width: 570px) {
+  .album-player {
+    margin-left: 2vw;
+  }
+}
+
+.text-elipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .album-title {
   text-decoration: none;
+  color: #333333;
+}
+
+.album-title:visited {
+  color: #333333;
 }

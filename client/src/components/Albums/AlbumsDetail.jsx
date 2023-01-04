@@ -36,9 +36,9 @@ const AlbumsDetail = () => {
     return () => (mounted = false) ;
   }, []);
 
-  if (album.artist_id === 3) {
+  if (album.artist_id === 5) {
     return album.artist_id = 'Yakuza';
-  } else if (album.artist_id === 4) {
+  } else if (album.artist_id === 6) {
     return album.artist_id = 'Iguana Garcia';
   }
 
@@ -55,7 +55,7 @@ const AlbumsDetail = () => {
           <div className='album-player' key={tracks.id}>
             {/* <button><i class="fa-solid fa-play"></i></button> */}
             <AudioPlayer audioUrl={tracks.audio_url} />
-            <p >{tracks.tracks_number} - {tracks.title}</p>
+            <p className='text-elipsis'>{tracks.tracks_number} - {tracks.title}</p>
           </div>
         )
       })}

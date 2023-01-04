@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './AudioPlayer.css';
 
 const AudioPlayer = ({ audioUrl }) => {
   const audioElement = useRef(null);
@@ -12,10 +13,10 @@ const AudioPlayer = ({ audioUrl }) => {
   };
 
   return (
-    <div>
+    <div className='details-player'>
       <audio ref={audioElement} src={audioUrl} />
-      <button onClick={play}><i class="fa-solid fa-play"></i></button>
-      <button onClick={pause}><i class="fa-solid fa-pause"></i></button>
+      <button onClick={play} className='button-play'><i className="uil uil-play"></i></button>
+      <button onClick={pause} className="button-previous-next"><i className="uil uil-pause"></i></button>
     </div>
   );
 };
