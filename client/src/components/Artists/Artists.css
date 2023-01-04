@@ -1,6 +1,6 @@
 .artists-grid {
   display: grid;
-  grid-template-columns: 500px 100px 800px;
+  grid-template-columns: 500px 167px 800px;
   grid-template-rows: repeat(1.5, 1fr);
   grid-template-areas:
     "pic pic hidden1"
@@ -9,12 +9,17 @@
 
 @media only screen and (max-width: 1200px) {
   .artists-grid {
-    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 100vw;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
     "pic"
     "bio";
-    width: 100vw;
+  }
+
+  .artist-bio {
+    padding: 0.5rem;
   }
 }
 
@@ -32,7 +37,7 @@
 }
 
 .artist-pic {
-  width: 600px;
+  width: 667px;
   grid-area: pic;
 }
 
