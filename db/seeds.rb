@@ -14,16 +14,10 @@ Artist.delete_all
 puts 'Seeding information...'
 # ARTISTAS
 # Yakuza
-yakuza_cover = URI.open('https://res.cloudinary.com/doa9kh79y/image/upload/v1672748148/disco%20interno/artists/yakuza/_DSF0163_zxuqrm.jpg')
-yakuza = Artist.new(name: 'Yakuza', bio: "Serpenteando entre os movimentos contemporâneos — do jazz londrino à fusão japonesa –, Afonso Serro, Pedro Ferreira e André Santos são a base de uma colectivo que cria, numa perspectiva urbana, um estilo característico, uma dança melodiosa com um groove e um flow cheios de harmonias perigosas. Entre paisagens sonoras que permitem a levitação e influências electrónicas que prometem fazer qualquer um bater o pé no chão")
-yakuza.photos.attach(io: yakuza_cover, filename: 'yakuza.jpg', content_type: 'image/jpg')
-yakuza.save
+yakuza = Artist.create!(name: 'Yakuza', bio: "Serpenteando entre os movimentos contemporâneos — do jazz londrino à fusão japonesa –, Afonso Serro, Pedro Ferreira e André Santos são a base de uma colectivo que cria, numa perspectiva urbana, um estilo característico, uma dança melodiosa com um groove e um flow cheios de harmonias perigosas. Entre paisagens sonoras que permitem a levitação e influências electrónicas que prometem fazer qualquer um bater o pé no chão", photo_url: 'https://res.cloudinary.com/doa9kh79y/image/upload/v1672748148/disco%20interno/artists/yakuza/_DSF0163_zxuqrm.jpg')
 
 # IGUANA GARCIA
-iguana_cover = URI.open('https://res.cloudinary.com/doa9kh79y/image/upload/v1672251008/disco%20interno/artists/iguana%20garcia/000050_dspf47.jpg')
-iguana_garcia = Artist.new(name: 'Iguana Garcia', bio: "Iguana Garcia é um produtor e multi-instrumentista português. Embaixador do 'dolce far niente' lisboeta enquanto dono de uma singular visão electrónica pop experimental. Iguana apresenta-se em palco com uma ilha de teclados e guitarras flaureados pelo saxofone tenor de João Marques. Nas cabines, seleciona tribalismos house produzidos pelo próprio.")
-iguana_garcia.photos.attach(io: iguana_cover, filename: 'iguana-garcia.jpg', content_type: 'image/jpg')
-iguana_garcia.save
+iguana_garcia = Artist.create!(name: 'Iguana Garcia', bio: "Iguana Garcia é um produtor e multi-instrumentista português. Embaixador do 'dolce far niente' lisboeta enquanto dono de uma singular visão electrónica pop experimental. Iguana apresenta-se em palco com uma ilha de teclados e guitarras flaureados pelo saxofone tenor de João Marques. Nas cabines, seleciona tribalismos house produzidos pelo próprio.", photo_url: 'https://res.cloudinary.com/doa9kh79y/image/upload/v1672251008/disco%20interno/artists/iguana%20garcia/000050_dspf47.jpg')
 
 # ALBUMS
 # Aileron
