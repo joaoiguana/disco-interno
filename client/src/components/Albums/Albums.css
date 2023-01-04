@@ -30,3 +30,7 @@
 .album-title:visited {
   color: #333333;
 }
+
+.cover-art {
+  height: 300px;
+}

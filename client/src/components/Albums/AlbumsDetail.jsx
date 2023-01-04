@@ -36,19 +36,14 @@ const AlbumsDetail = () => {
     return () => (mounted = false) ;
   }, []);
 
-  if (album.artist_id === 5) {
-    return album.artist_id = 'Yakuza';
-  } else if (album.artist_id === 6) {
-    return album.artist_id = 'Iguana Garcia';
-  }
-
   let filteredTracks = tracks.filter(track => track.album_id === album.id);
 
   return (
     <div>
-      <h3>{album.title} ({album.year})</h3>
-      <h4>{album.artist_id}</h4>
-      <p>{album.description} - {album.catalog_number}</p>
+      <img src={album.photo_url} alt="cover-art" className='cover-art' />
+      <h3>{album.title} ({album.year}) - {album.catalog_number}</h3>
+      <h4>{album.artist_name}</h4>
+      <p>{album.description}</p>
       <p>{album.genre}</p>
       {filteredTracks.map((tracks) => {
         return (

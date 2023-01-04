@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav>
       <Link exact to="/"><img src="https://res.cloudinary.com/doa9kh79y/image/upload/v1672756012/disco%20interno/logo/Logo-1366x768px_j9uybj.png" alt="logo-discointerno"  className='logo nav-logo'/></Link>
-      <Link to="/artists" className='nav-menus'><i class="uil uil-boombox"></i> Artists</Link>
+      <Link to="/artists" className='nav-menus'><i class="uil uil-boombox"></i> Artistas</Link>
       <Link to="/albums" className='nav-menus nav-album'><i class="uil uil-music"></i> Albums</Link>
       {/* <Link to="/tracks">Tracks</Link> */}
     </nav>
