@@ -39,7 +39,7 @@ const AlbumsDetail = () => {
   let filteredTracks = tracks.filter(track => track.album_id === album.id);
 
   return (
-    <div>
+    <div className='tracks-box'>
       <img src={album.photo_url} alt="cover-art" className='cover-art' />
       <h3>{album.title} ({album.year}) - {album.catalog_number}</h3>
       <h4>{album.artist_name}</h4>

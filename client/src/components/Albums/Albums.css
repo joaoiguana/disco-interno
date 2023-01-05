@@ -34,3 +34,14 @@
 .cover-art {
   height: 300px;
 }
+
+.tracks-box {
+  margin-bottom: 0.5rem;
+}
+
+.albums-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

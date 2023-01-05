@@ -26,7 +26,7 @@ const Albums = () => {
     <div>
       {albums.map((album) => {
         return (
-              <div key={album.id}>
+              <div key={album.id} className='albums-show'>
                 <Link to={`/albums/${album.id}`} className='album-title'>
                   <h2>{album.title} ({album.year})</h2>
                 </Link>

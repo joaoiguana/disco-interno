@@ -6,9 +6,10 @@
   z-index: 2;
   width: 18.75rem;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .music-widget {
@@ -99,7 +100,12 @@ i {
   background: none;
   cursor: pointer;
   position: absolute;
+  opacity: 0.5;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.broadcast-button:hover {
+  opacity: 1;
 }

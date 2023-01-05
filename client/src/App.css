@@ -10,6 +10,10 @@ html {
   background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
+body {
+  color: #1d1d1d;
+}
+
 .App {
   text-align: center;
   font-family: 'Sora', sans-serif;
