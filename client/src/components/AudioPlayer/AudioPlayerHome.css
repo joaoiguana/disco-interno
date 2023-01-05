@@ -6,7 +6,7 @@
   z-index: 2;
   width: 18.75rem;
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -91,4 +91,15 @@ i {
 
 .uil-play {
   margin-left: 0.25rem;
+}
+
+.broadcast-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

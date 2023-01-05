@@ -3,8 +3,9 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const ArtistsDetail = () => {
-  const [artist, setArtist] = useState([])
+  const [artist, setArtist] = useState([]);
   const { id } = useParams();
+
 
   const getAPIData = async () => {
     return axios.get(`http://localhost:3000/artists/${id}`).then((response) => response.data)

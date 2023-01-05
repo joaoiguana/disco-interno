@@ -4,3 +4,12 @@
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 3px;
 }
+
+.home-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
