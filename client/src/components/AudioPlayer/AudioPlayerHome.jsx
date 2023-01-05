@@ -19,7 +19,7 @@ const AudioPlayerHome = ({ coverArtUrl, trackTitle, artistName, audioUrl }) => {
 
   return (
     <div>
-      <button onClick={toggleClass} className='broadcast-button'><h2><i class="fa-solid fa-podcast"></i></h2></button>
+      <button onClick={toggleClass} className='broadcast-button'><h2><i className="fa-solid fa-podcast"></i></h2></button>
       <div className={isActive ? 'card': 'card hidden'} >
         <div className="music-widget">
           <img src={coverArtUrl} alt="album_cover" className='art'/>
