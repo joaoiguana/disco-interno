@@ -8,7 +8,7 @@ const ArtistsDetail = () => {
 
 
   const getAPIData = async () => {
-    return axios.get(`http://localhost:3000/artists/${id}`).then((response) => response.data)
+    return await axios.get(`http://localhost:3000/artists/${id}`).then((response) => response.data)
   }
 
   useEffect(() => {
