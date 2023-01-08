@@ -3,8 +3,12 @@ import './AudioPlayer.css';
 
 const AudioPlayer = ({ audioUrl }) => {
   const audioElement = useRef(null);
+  const audioElements = document.getElementsByTagName('audio');
 
   const play = () => {
+    for (let i = 0; i < audioElements.length; i++) {
+      audioElements[i].pause();
+    }
     audioElement.current.play();
   };
 
