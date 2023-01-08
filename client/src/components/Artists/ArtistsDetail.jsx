@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const ArtistsDetail = () => {
   const [artist, setArtist] = useState([]);
@@ -12,6 +14,8 @@ const ArtistsDetail = () => {
   }
 
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
     let mounted = true;
     getAPIData().then((items) => {
       if (mounted) {
@@ -23,10 +27,10 @@ const ArtistsDetail = () => {
 
   return (
     <div className='artists-grid'>
-      <img src={artist.photo_url} alt="artist-pic"  className='artist-pic'/>
+      <img src={artist.photo_url} alt="artist-pic"  className='artist-pic' data-aos="fade-up-right"/>
       <h1 className='hiddenY'>Y</h1>
       <img src='https://res.cloudinary.com/doa9kh79y/image/upload/v1672853287/disco%20interno/design-tools/rectangle_fit_cefuua.jpg' alt="artist-pic"  className='artist-pic hidden'/>
-      <div className='artist-bio'>
+      <div className='artist-bio' data-aos="fade-left">
         <h3>{artist.name}</h3>
         <p>{artist.bio}</p>
         <div className='link-icons'>

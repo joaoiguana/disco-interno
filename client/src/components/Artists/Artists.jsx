@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import './Artists.css'
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import './Artists.css';
 
 const API_URL = 'http://localhost:3000/artists';
 
@@ -13,6 +15,8 @@ const Artists = (props) => {
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
     let mounted = true;
     getAPIData().then((items) => {
       if (mounted) {
@@ -23,7 +27,7 @@ const Artists = (props) => {
   }, []);
 
   return (
-    <div>
+    <div data-aos="fade-up-right">
       {artists.map((artist) => {
         return (
               <div key={artist.id} className='artists-show'>
