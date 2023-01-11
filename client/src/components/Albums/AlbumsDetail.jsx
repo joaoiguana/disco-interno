@@ -39,18 +39,19 @@ const AlbumsDetail = () => {
   let filteredTracks = tracks.filter(track => track.album_id === album.id);
 
   return (
-    <div className='tracks-box'>
-      <div>
+    <div className='albums-grid'>
+      <div className='album-bio'>
         <img src={album.photo_url} alt="cover-art" className='cover-art' />
         <h3>{album.title} ({album.year}) - {album.catalog_number}</h3>
         <h4>{album.artist_name}</h4>
-      </div>
-      <div className='bio-tracks-card'>
         <div>
           <p>{album.description}</p>
           <p><i className="uil uil-music-note"></i> {album.genre}</p>
         </div>
+      </div>
+      <div className='tracks-card'>
         <div>
+          <h3>Faixas</h3>
           {filteredTracks.map((tracks) => {
             return (
               <div className='album-player' key={tracks.id}>

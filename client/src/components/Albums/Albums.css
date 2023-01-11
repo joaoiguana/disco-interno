@@ -1,7 +1,13 @@
+.albums-grid {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-areas:
+    "bio player";
+}
+
 .album-player {
   display: flex;
   align-items: center;
-  margin-left: 45vw;
 }
 
 @media (max-width: 800px) {
@@ -14,6 +20,16 @@
   .album-player {
     margin-left: 2vw;
   }
+}
+
+.album-bio {
+  padding: 1rem;
+  grid-area: bio;
+}
+
+.tracks-card {
+  padding: 1rem;
+  grid-area: player;
 }
 
 .text-elipsis {
@@ -33,12 +49,6 @@
 
 .cover-art {
   height: 300px;
-}
-
-.tracks-box {
-  background-color: #bbbbbb;
-  padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 3px;
 }
 
 .albums-show {
