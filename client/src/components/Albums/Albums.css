@@ -11,14 +11,11 @@
 }
 
 @media (max-width: 800px) {
-  .album-player {
-    margin-left: 25vw;
-  }
-}
-
-@media (max-width: 570px) {
-  .album-player {
-    margin-left: 2vw;
+  .albums-grid {
+    grid-template-columns: 100vw;
+    grid-template-areas:
+    "bio"
+    "player";
   }
 }
 
