@@ -1,7 +1,7 @@
 .details-player {
   display: flex;
   align-items: center;
-  min-width: 6rem;
+  min-width: 15.375rem;
 }
 
 .progress-container {
@@ -11,6 +11,17 @@
   margin: 10px 0;
   height: 4px;
   width: 150px;
+}
+
+@media (max-width: 600px)
+{
+  .details-player {
+    min-width: 11.625rem;
+  }
+  .progress-container
+   {
+    width: 90px;
+   }
 }
 
 .progress {
