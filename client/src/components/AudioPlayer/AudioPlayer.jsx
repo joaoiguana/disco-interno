@@ -1,8 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import './AudioPlayer.css';
 
 const AudioPlayer = ({ audioUrl }) => {
-  const [currentTime, setCurrentTime] = useState(0);
   const audioElement = useRef(null);
   const progressBar = useRef();
   const progress = useRef();
