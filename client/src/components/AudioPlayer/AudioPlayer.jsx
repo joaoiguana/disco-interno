@@ -4,6 +4,8 @@ import './AudioPlayer.css';
 const AudioPlayer = ({ audioUrl }) => {
   const audioElement = useRef(null);
   const audioElements = document.getElementsByTagName('audio');
+  const progress = document.querySelector('.progress');
+  const progressContainer = document.querySelector('.progress-container');
 
   const play = () => {
     for (let i = 0; i < audioElements.length; i++) {
@@ -16,13 +18,20 @@ const AudioPlayer = ({ audioUrl }) => {
     audioElement.current.pause();
   };
 
+  function updateProgress(e) {
+    const {duration, currentTime} = e.srcElement;
+    const progressPercent = (currentTime / duration) * 100;
+    progress.style.width = `${progressPercent}%`;
+  };
+
   const setProgress = (e) => {
-    const width = this.clientWidth;
+    const width = e.clientWidth;
     const clickX = e.offsetX;
     const duration = audioElement.duration
 
-    audioElement.currentTime = (clickX / width) * duration;
-  }
+    audioElements.currentTime = (clickX / width) * duration;
+    console.log(audioElements.currentTime);
+  };
 
   return (
     <div className='details-player'>
