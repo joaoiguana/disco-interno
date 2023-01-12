@@ -50,7 +50,7 @@ const AlbumsDetail = () => {
         <h4>{album.artist_name}</h4>
         <div>
           <p>{album.description}</p>
-          <p><i className="uil uil-music-note"></i> {album.genre}</p>
+          <p className='genre'><i className="uil uil-music-note"></i> {album.genre}</p>
         </div>
       </div>
       <div className='tracks-card' data-aos="fade-up">
