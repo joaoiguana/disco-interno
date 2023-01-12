@@ -1,3 +1,22 @@
 .details-player {
+  display: flex;
+  align-items: center;
   min-width: 6rem;
+}
+
+.progress-container {
+  background: #bbbbbb;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 150px;
+}
+
+.progress {
+  background-color: #ff679f;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
 }
