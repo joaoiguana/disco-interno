@@ -58,6 +58,9 @@ const AlbumsDetail = () => {
                 {/* <button><i class="fa-solid fa-play"></i></button> */}
                 <AudioPlayer audioUrl={tracks.audio_url} />
                 <p className='text-elipsis'>{tracks.tracks_number} - {tracks.title}</p>
+                <div class="progress-container">
+                  <div class="progress"></div>
+                </div>
               </div>
             )
           })}
