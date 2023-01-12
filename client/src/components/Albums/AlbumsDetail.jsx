@@ -45,10 +45,10 @@ const AlbumsDetail = () => {
   return (
     <div className='albums-grid'>
       <div className='album-bio' data-aos="fade-down">
-        <img src={album.photo_url} alt="cover-art" className='cover-art' />
+        <img src={album.photo_url} alt="cover-art" className='cover-art' data-aos="fade-down" />
         <h3>{album.title} ({album.year}) - {album.catalog_number}</h3>
         <h4>{album.artist_name}</h4>
-        <div>
+        <div data-aos="fade-right">
           <p>{album.description}</p>
           <p className='genre'><i className="uil uil-music-note"></i> {album.genre}</p>
         </div>
