@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import AudioPlayer from '../AudioPlayer/AudioPlayer';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const AlbumsDetail = () => {
   const [album, setAlbum] = useState([]);
@@ -17,6 +19,8 @@ const AlbumsDetail = () => {
   }
 
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
     let mounted = true;
     getAPIData().then((items) => {
       if (mounted) {
@@ -40,7 +44,7 @@ const AlbumsDetail = () => {
 
   return (
     <div className='albums-grid'>
-      <div className='album-bio'>
+      <div className='album-bio' data-aos="fade-down">
         <img src={album.photo_url} alt="cover-art" className='cover-art' />
         <h3>{album.title} ({album.year}) - {album.catalog_number}</h3>
         <h4>{album.artist_name}</h4>
@@ -49,7 +53,7 @@ const AlbumsDetail = () => {
           <p><i className="uil uil-music-note"></i> {album.genre}</p>
         </div>
       </div>
-      <div className='tracks-card'>
+      <div className='tracks-card' data-aos="fade-up">
         <div>
           <h3>Faixas</h3>
           {filteredTracks.map((tracks) => {
