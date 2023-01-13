@@ -12,6 +12,13 @@
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
+@media (max-height: 680px)
+{
+  .card {
+    max-width: 12.750rem;
+  }
+}
+
 .music-widget {
   display: grid;
   grid-template-rows: auto auto;
@@ -37,17 +44,22 @@
 }
 
 .text {
-  margin: 1rem;
+  margin: 0.8rem;
 }
 
 ul {
   list-style: none;
 }
 
-/* .song-title {
-  animation: marquee 10s linear infinite;
+.artist-name {
+  margin: 0.4rem;
 }
-@keyframes marquee {
+
+.song-title {
+  animation: marquee 10s linear infinite;
+  margin: 0.4rem;
+}
+/* @keyframes marquee {
   from {
     transform: translateX(100%)
   }
