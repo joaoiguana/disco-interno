@@ -14,6 +14,16 @@ nav {
   text-decoration: none;
 }
 
+@media (max-height: 680px)
+{
+  .logo {
+    width: 50px;
+  }
+  .nav-menus {
+    font-size: 14px;
+  }
+}
+
 .nav-logo {
   margin-left: 0.5rem;
 }
