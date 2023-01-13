@@ -41,6 +41,13 @@
   grid-area: pic;
 }
 
+@media (max-height: 680px)
+{
+  .artist-pic {
+    max-width: 440px;
+  }
+}
+
 .hiddenY {
   opacity: 0;
   grid-area: hidden1;
