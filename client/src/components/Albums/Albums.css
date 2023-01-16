@@ -49,6 +49,14 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
+.genre {
+  font-size: 14px;
+}
+
+
+/* ALBUMS.JSX */
+
+
 .albums-show {
   display: flex;
   flex-direction: column;
@@ -56,6 +64,27 @@
   justify-content: center;
 }
 
-.genre {
-  font-size: 14px;
+.card-albums {
+  width: 250px;
+  height: 250px;
+  padding: 1rem;
+  background: #bbbbbb;
+  color: white;
+  border-radius: 0.5rem;
+  position: relative;
+  margin: 1rem;
+}
+
+.hole {
+  z-index: 3;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

@@ -32,7 +32,10 @@ const Albums = () => {
         return (
               <div key={album.id} className='albums-show' data-aos="fade-up-right">
                 <Link to={`/albums/${album.id}`} className='album-title'>
-                  <h2>{album.title} ({album.year})</h2>
+                  <div className="card-albums">
+                    <div className='hole'></div>
+                    <h2>{album.title} ({album.year})</h2>
+                  </div>
                 </Link>
               </div>
         );
