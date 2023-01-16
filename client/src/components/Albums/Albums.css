@@ -37,11 +37,11 @@
 
 .album-title {
   text-decoration: none;
-  color: #333333;
+  color: var(--color-accent);
 }
 
 .album-title:visited {
-  color: #333333;
+  color: var(--color-accent);
 }
 
 .cover-art {
@@ -68,8 +68,8 @@
   width: 250px;
   height: 250px;
   padding: 1rem;
-  background: #bbbbbb;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-white);
   border-radius: 0.5rem;
   position: relative;
   margin: 0.45rem;

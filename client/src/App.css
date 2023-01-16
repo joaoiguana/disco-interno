@@ -14,7 +14,8 @@ html {
   --color-primary: #bbbbbb;
   --color-accent: #333333;
   --color-player: #ff679f;
-  --color-white: #f7f7f7;
+  --color-light: #f0f0f0;
+  --color-white: #ffffff;
   --color-body: #1d1d1d;
 }
 

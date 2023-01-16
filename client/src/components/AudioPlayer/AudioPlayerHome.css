@@ -83,7 +83,7 @@ ul {
   justify-content: space-evenly;
   margin: 0;
   padding: 0.5rem;
-  background-color: #f0f0f0;
+  background-color: var(--color-light);
 }
 
 .button-previous-next {
@@ -101,7 +101,7 @@ ul {
   border-radius: 50%;
   padding: 0;
   border: none;
-  background-color: #ff679f;
+  background-color: var(--color-player);
   cursor: pointer;
 }
 
