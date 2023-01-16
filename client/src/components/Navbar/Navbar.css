@@ -1,5 +1,5 @@
 .logo {
-  width: 60px;
+  width: 65px;
 }
 
 nav {
@@ -25,9 +25,9 @@ nav {
 }
 
 .nav-logo {
-  margin-left: 0.5rem;
+  margin-left: 0.8rem;
 }
 
-.nav-album {
-  margin-right: 0.5rem;
+.nav-artists {
+  margin-right: 0.8rem;
 }
