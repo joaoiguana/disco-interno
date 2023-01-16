@@ -17,10 +17,23 @@ html {
   --color-light: #f0f0f0;
   --color-white: #ffffff;
   --color-body: #1d1d1d;
+
+  --margin-xsmall: 0.125rem;
+  --margin-small: 0.25rem;
+  --margin-lgsmall: 0.5rem;
+
+  --margin-mediumxs: 0.8rem;
+  --margin-medium: 1rem;
+  --margin-mediumlg: 1.2rem;
 }
 
 body {
   color: var(--color-body);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .App {

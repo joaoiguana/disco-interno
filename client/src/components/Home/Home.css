@@ -10,7 +10,21 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  color: var(--color-light);
+  color: var(--color-white);
   text-align: center;
   font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.link-home {
+  margin-left: var(--margin-lgsmall);
+}
+
+.home-mail {
+  margin-right: var(--margin-mediumxs);
 }
