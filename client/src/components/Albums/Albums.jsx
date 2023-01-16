@@ -35,6 +35,7 @@ const Albums = () => {
                   <div className="card-albums">
                     <div className='hole'></div>
                     <h2>{album.title} ({album.year})</h2>
+                    <img src={album.photo_url} alt="cover-art" className='cover-label' />
                   </div>
                 </Link>
               </div>
