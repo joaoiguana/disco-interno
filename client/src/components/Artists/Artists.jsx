@@ -35,6 +35,7 @@ const Artists = (props) => {
                   <div className="card-artists">
                     <div className="circle"></div>
                     <h2>{artist.name}</h2>
+                    <div className='triangle'></div>
                   </div>
                 </Link>
               </div>
