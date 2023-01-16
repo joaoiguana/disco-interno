@@ -40,7 +40,7 @@
   grid-column: 1 / 2;
   align-self: end;
   background-color: rgba(100%, 100%, 100%, 60%);
-  backdrop-filter: blur(0.25rem);
+  backdrop-filter: blur(var(--margin-small));
 }
 
 .text {
