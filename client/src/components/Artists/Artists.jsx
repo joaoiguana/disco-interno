@@ -35,6 +35,7 @@ const Artists = (props) => {
                   <div className="card-artists">
                     <h2 className='card-artist-name'>{artist.name}</h2>
                     <img src={artist.cover_url} alt="artist-cover" className='artist-cover' />
+                    <img src="https://res.cloudinary.com/doa9kh79y/image/upload/v1673878257/disco%20interno/graphics-diagrams/svg/Asset_24_-_Fox_Rockett_Studio_ayjy2q.svg" alt="" />
                   </div>
                 </Link>
               </div>
