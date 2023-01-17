@@ -75,6 +75,13 @@
   margin-right: 0.5rem;
 }
 
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--margin-medium);
+}
+
 
 /* ARTISTS.JSX */
 

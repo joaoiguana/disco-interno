@@ -33,11 +33,16 @@ const ArtistsDetail = () => {
       <div className='artist-bio' data-aos="fade-left">
         <h3>{artist.name}</h3>
         <p>{artist.bio}</p>
-        <div className='link-icons'>
-          <i className="fa-brands fa-spotify artists-icons"></i>
-          <i className="fa-brands fa-bandcamp artists-icons"></i>
-          <i className="fa-brands fa-soundcloud artists-icons"></i>
-          <i className="fa-brands fa-instagram artists-icons"></i>
+        <div className='link-container'>
+          <div className='link-icons'>
+            <a href={artist.spotify_url} target='_blank'><i className="fa-brands fa-spotify artists-icons"></i></a>
+            <a href={artist.bandcamp_url} target='_blank'><i className="fa-brands fa-bandcamp artists-icons"></i></a>
+            <a href={artist.soundcloud_url} target='_blank'><i className="fa-brands fa-soundcloud artists-icons"></i></a>
+            <a href={artist.instagram_url} target='_blank'><i className="fa-brands fa-instagram artists-icons"></i></a>
+          </div>
+          <div>
+            <a href={artist.press} target='_blank'><p><strong>Press</strong> <i class="fa-regular fa-newspaper"></i></p></a>
+          </div>
         </div>
       </div>
     </div>
