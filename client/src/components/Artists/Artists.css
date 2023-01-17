@@ -94,15 +94,7 @@
 }
 
 .card-artists {
-  width: 190px;
-  height: 250px;
-  padding: 1rem;
-  background: var(--color-primary);
-  color: var(--color-white);
   border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
 .circle {
@@ -117,4 +109,9 @@
   left: 85%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.artist-cover {
+  max-width: 500px;
+  border-radius: 0.5rem;
 }
