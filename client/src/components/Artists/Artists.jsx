@@ -33,7 +33,7 @@ const Artists = (props) => {
               <div key={artist.id} className='artists-show'>
                 <Link to={`/artists/${artist.id}`} className='artist-name'>
                   <div className="card-artists">
-                    <h2>{artist.name}</h2>
+                    <h2 className='card-artist-name'>{artist.name}</h2>
                     <img src={artist.cover_url} alt="artist-cover" className='artist-cover' />
                   </div>
                 </Link>
