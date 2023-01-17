@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_17_121637) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_17_133203) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -69,6 +69,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_17_121637) do
     t.string "instagram_url"
     t.string "cover_url"
     t.string "press"
+    t.string "youtube_url"
   end
 
   create_table "tracks", force: :cascade do |t|
