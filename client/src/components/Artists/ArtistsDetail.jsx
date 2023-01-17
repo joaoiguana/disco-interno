@@ -35,8 +35,9 @@ const ArtistsDetail = () => {
         <p>{artist.bio}</p>
         <div className='link-container'>
           <div className='link-icons'>
-            <a href={artist.spotify_url} target='_blank'><i className="fa-brands fa-spotify artists-icons"></i></a>
+            <a href={artist.spotify_url} target='_blank' alt='Spotify'><i className="fa-brands fa-spotify artists-icons"></i></a>
             <a href={artist.bandcamp_url} target='_blank'><i className="fa-brands fa-bandcamp artists-icons"></i></a>
+            <a href={artist.youtube_url} target='_blank'><i class="fa-brands fa-youtube artists-icons"></i></a>
             <a href={artist.soundcloud_url} target='_blank'><i className="fa-brands fa-soundcloud artists-icons"></i></a>
             <a href={artist.instagram_url} target='_blank'><i className="fa-brands fa-instagram artists-icons"></i></a>
           </div>
