@@ -74,7 +74,6 @@
 } */
 
 .card-albums {
-  grid-area: album;
   width: 250px;
   height: 250px;
   background: var(--color-primary);
@@ -115,6 +114,12 @@
   left: 85%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+  .card-albums {
+    margin-right: 5rem;
+  }
 }
 
 .albums-outer-container {
