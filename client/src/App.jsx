@@ -6,8 +6,6 @@ import Artists from './components/Artists/Artists';
 import ArtistsDetail from './components/Artists/ArtistsDetail';
 import Albums from './components/Albums/Albums';
 import AlbumsDetail from './components/Albums/AlbumsDetail';
-import Tracks from './components/Tracks/Tracks';
-import TracksDetail from './components/Tracks/TracksDetail';
 import Home from './components/Home/Home'
 
 const App = () => {
@@ -23,8 +21,6 @@ const App = () => {
           <Route path='/artists/:id' element={<ArtistsDetail />} />
           <Route exact path='/albums' element={<Albums />} />
           <Route path='/albums/:id' element={<AlbumsDetail />} />
-          <Route exact path='/tracks' element={<Tracks />} />
-          <Route path='/tracks/:id' element={<TracksDetail />} />
         </Routes>
       </div>
     </Router>
