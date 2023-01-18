@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomeFooter = () => {
   return (
@@ -8,7 +9,7 @@ const HomeFooter = () => {
         <p className='link-home'><a href="https://www.instagram.com/discointerno/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
       </div>
       <p><i className="fa-regular fa-copyright"></i> Direitos reservados aos artistas e Disco Interno.</p>
-      <p className='home-mail'><i class="fa-regular fa-envelope"></i> discointernolx@gmail.com</p>
+      <Link to='/about'><p className='home-mail'><i class="fa-regular fa-envelope"></i> discointernolx@gmail.com</p></Link>
     </div>
   );
 }
