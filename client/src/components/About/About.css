@@ -1,0 +1,15 @@
+.about-page {
+  height: 90vh;
+  background-image: url(https://res.cloudinary.com/doa9kh79y/image/upload/v1673878272/disco%20interno/graphics-diagrams/svg/Asset_29_-_Fox_Rockett_Studio_ftb5bb.svg);
+}
+
+.about-container {
+  height: 90vh;
+  width: 60vw;
+  padding: var(--margin-mediumlg);
+  margin: 0 auto;
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}

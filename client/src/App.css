@@ -40,3 +40,7 @@ a {
   text-align: center;
   font-family: 'Sora', sans-serif;
 }
+
+.margin-reset {
+  margin: 0;
+}
