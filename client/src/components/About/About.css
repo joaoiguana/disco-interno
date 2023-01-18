@@ -11,5 +11,10 @@
   background: var(--color-white);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.artists-h2 {
   text-align: left;
 }

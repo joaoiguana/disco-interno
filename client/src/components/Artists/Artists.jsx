@@ -27,20 +27,22 @@ const Artists = (props) => {
   }, []);
 
   return (
-    <div data-aos="fade-up-right">
-      {artists.map((artist) => {
-        return (
-              <div key={artist.id} className='artists-show'>
-                <Link to={`/artists/${artist.id}`} className='artist-name'>
-                  <div className="card-artists">
-                    <h2 className='card-artist-name'>{artist.name}</h2>
-                    <img src={artist.cover_url} alt="artist-cover" className='artist-cover' />
-                    <img src="https://res.cloudinary.com/doa9kh79y/image/upload/v1673878257/disco%20interno/graphics-diagrams/svg/Asset_24_-_Fox_Rockett_Studio_ayjy2q.svg" alt="" />
-                  </div>
-                </Link>
-              </div>
-        );
-      })}
+    <div className='artist-outer-container'>
+      <div className='artists-container'>
+        <h2 className='artists-h2'>Os nossos artistas:</h2>
+        {artists.map((artist) => {
+          return (
+                <div key={artist.id} className='artists-show' data-aos="fade-up-right">
+                  <Link to={`/artists/${artist.id}`} className='artist-name'>
+                    <div className="card-artists">
+                      <h2 className='card-artist-name'>{artist.name}</h2>
+                      <img src={artist.cover_url} alt="artist-cover" className='artist-cover' />
+                    </div>
+                  </Link>
+                </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
