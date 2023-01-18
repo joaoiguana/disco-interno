@@ -63,7 +63,7 @@
   justify-content: center;
 }
 
-@media (max-width: 440px) {
+/* @media (max-width: 440px) {
   .albums-show {
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@
     justify-content: center;
     margin-left: 0.125rem;
   }
-}
+} */
 
 .card-albums {
   grid-area: album;
@@ -107,4 +107,34 @@
   left: 85%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.albums-outer-container {
+  background-image: url('https://res.cloudinary.com/doa9kh79y/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1673878259/disco%20interno/graphics-diagrams/svg/Asset_32_-_Fox_Rockett_Studio_msbph2.svg');
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.albums-container {
+  height: 70vh;
+  width: 60vw;
+  background-color: white;
+  margin: 0 auto;
+  overflow-y: scroll;
+  padding: var(--margin-lgsmall);
+}
+
+@media only screen and (max-width: 1200px) {
+  .albums-container {
+    width: 90vw;
+  }
+}
+
+.albums-h2 {
+  text-align: left;
+  background-color: var(--color-white);
+  margin-top: 0;
 }
