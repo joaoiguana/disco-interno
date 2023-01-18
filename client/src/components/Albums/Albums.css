@@ -110,7 +110,7 @@
 }
 
 .albums-outer-container {
-  background-image: url('https://res.cloudinary.com/doa9kh79y/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1673878259/disco%20interno/graphics-diagrams/svg/Asset_32_-_Fox_Rockett_Studio_msbph2.svg');
+  background-image: url('https://res.cloudinary.com/doa9kh79y/image/upload/v1673878257/disco%20interno/graphics-diagrams/svg/Asset_26_-_Fox_Rockett_Studio_xoizlg.svg');
   background-size: cover;
   height: 90vh;
   display: flex;
@@ -124,12 +124,12 @@
   background-color: white;
   margin: 0 auto;
   overflow-y: scroll;
-  padding: var(--margin-lgsmall);
+  padding: var(--margin-medium);
 }
 
 @media only screen and (max-width: 1200px) {
   .albums-container {
-    width: 90vw;
+    width: 80vw;
   }
 }
 
