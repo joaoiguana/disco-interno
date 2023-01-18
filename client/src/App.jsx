@@ -6,7 +6,8 @@ import Artists from './components/Artists/Artists';
 import ArtistsDetail from './components/Artists/ArtistsDetail';
 import Albums from './components/Albums/Albums';
 import AlbumsDetail from './components/Albums/AlbumsDetail';
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';
+import About from './components/About/About'
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
 
         <Routes>
           <Route exact path='/' element={<Home />} />
+          <Route exact path='/about' element={<About />} />
           <Route exact path='/artists' element={<Artists />} />
           <Route path='/artists/:id' element={<ArtistsDetail />} />
           <Route exact path='/albums' element={<Albums />} />
