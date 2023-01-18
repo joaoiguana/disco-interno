@@ -77,12 +77,20 @@
   grid-area: album;
   width: 250px;
   height: 250px;
-  padding: 1rem;
   background: var(--color-primary);
   color: var(--color-white);
   border-radius: 0.5rem;
   position: relative;
   margin: 0.45rem;
+}
+
+.card-album-background {
+  position: absolute;
+  background-color: var(--color-primary);
+  width: 250px;
+  height: 250px;
+  z-index: 1;
+  border-radius: 0.5rem;
 }
 
 .hole {
@@ -100,7 +108,7 @@
 }
 
 .cover-label {
-  z-index: -2;
+  z-index: 0;
   width: 245px;
   position: absolute;
   top: 50%;

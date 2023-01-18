@@ -35,8 +35,10 @@ const Albums = () => {
                 <div key={album.id} className='albums-show' data-aos="fade-up-right">
                   <Link to={`/albums/${album.id}`} className='album-title'>
                     <div className="card-albums">
-                      <div className='hole'></div>
-                      <h2>{album.title} ({album.year})</h2>
+                      <div className='card-album-background'>
+                        <div className='hole'></div>
+                        <h2>{album.title} ({album.year})</h2>
+                      </div>
                       <img src={album.photo_url} alt="cover-art" className='cover-label' />
                     </div>
                   </Link>
