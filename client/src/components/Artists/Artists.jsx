@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
+import BackButton from '../BackButton/BackButton';
 import "aos/dist/aos.css";
 import './Artists.css';
 
@@ -42,6 +43,7 @@ const Artists = (props) => {
                 </div>
           );
         })}
+        <BackButton />
       </div>
     </div>
   );
