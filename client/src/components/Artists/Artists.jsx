@@ -43,7 +43,6 @@ const Artists = (props) => {
                 </div>
           );
         })}
-        <BackButton />
       </div>
     </div>
   );
