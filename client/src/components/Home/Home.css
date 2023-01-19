@@ -1,16 +1,33 @@
-.home-main {
+.home {
   height: 90vh;
-  background-color: var(--color-primary);
   display: flex;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 3px;
+  align-items: center;
+  background-image: url(https://res.cloudinary.com/doa9kh79y/image/upload/v1673878272/disco%20interno/graphics-diagrams/svg/Asset_29_-_Fox_Rockett_Studio_ftb5bb.svg);
 }
+
+.home-main {
+  height: 85vh;
+  width: 60vw;
+  margin: 0 auto;
+  background-color: var(--color-white);
+}
+
+@media only screen and (max-width: 600px) {
+  .home-main {
+    width: 80vw;
+  }
+}
+
 
 .home-footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  color: var(--color-white);
+  color: var(--color-accent);
+  background-color: rgba(187, 187, 187, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
   text-align: center;
   font-size: 10px;
   display: flex;

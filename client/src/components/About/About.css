@@ -18,3 +18,9 @@
   justify-content: center;
   text-align: left;
 }
+
+@media only screen and (max-width: 600px) {
+  .about-container {
+    height: 80vh;
+  }
+}
