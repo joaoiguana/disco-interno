@@ -42,7 +42,7 @@ const ArtistsDetail = () => {
             <a href={artist.instagram_url} target='_blank'><i className="fa-brands fa-instagram artists-icons"></i></a>
           </div>
           <div>
-            <a href={artist.press} target='_blank'><p><strong>Press</strong> <i class="fa-regular fa-newspaper"></i></p></a>
+            <a href={artist.press} target='_blank'><p><strong>Press</strong></p></a>
           </div>
         </div>
       </div>
