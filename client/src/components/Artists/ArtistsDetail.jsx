@@ -30,7 +30,7 @@ const ArtistsDetail = () => {
     <div className='artists-grid'>
       <img src={artist.photo_url} alt="artist-pic"  className='artist-pic' data-aos="fade-up-right"/>
       <h1 className='hiddenY'>Y</h1>
-      <img src='https://res.cloudinary.com/doa9kh79y/image/upload/v1672853287/disco%20interno/design-tools/rectangle_fit_cefuua.jpg' alt="artist-pic hidden" />
+      <img src='https://res.cloudinary.com/doa9kh79y/image/upload/v1672853287/disco%20interno/design-tools/rectangle_fit_cefuua.jpg' alt="invisible-box-left hidden" />
       <div className='artist-bio' data-aos="fade-left">
         <h3>{artist.name}</h3>
         <p>{artist.bio}</p>

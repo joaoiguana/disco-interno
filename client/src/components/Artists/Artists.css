@@ -1,6 +1,8 @@
 /* ARTISTSDETAIL.JSX */
 
 .artists-grid {
+  height: 90vh;
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: 500px 167px 800px;
   grid-template-rows: repeat(1.5, 1fr);
@@ -43,12 +45,12 @@
   grid-area: pic;
 }
 
-@media (max-height: 680px) and (max-width: 900px)
+/* @media (max-height: 680px) and (max-width: 900px)
 {
   .artist-pic {
     max-width: 440px;
   }
-}
+} */
 
 .hiddenY {
   opacity: 0;
