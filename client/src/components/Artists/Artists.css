@@ -43,7 +43,7 @@
   grid-area: pic;
 }
 
-@media (max-height: 680px)
+@media (max-height: 680px) and (max-width: 900px)
 {
   .artist-pic {
     max-width: 440px;
