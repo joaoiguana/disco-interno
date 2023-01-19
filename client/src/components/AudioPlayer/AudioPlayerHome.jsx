@@ -46,7 +46,7 @@ const AudioPlayerHome = () => {
 
   return (
     <div>
-      <button onClick={() => {toggleClass(); handleRandomClick()}} className='broadcast-button'><h2><i className="fa-solid fa-podcast"></i></h2></button>
+      <button onClick={() => {toggleClass(); handleRandomClick()}} className='broadcast-button'><p><i className="fa-solid fa-podcast"></i></p></button>
       <div className={isActive ? 'card': 'card hidden'} >
         <div className="music-widget">
           <img src={oneTrack.photo_url} alt="album_cover" className='art'/>
