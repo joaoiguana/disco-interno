@@ -59,8 +59,8 @@
 
 .albums-show {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 /* @media (max-width: 440px) {

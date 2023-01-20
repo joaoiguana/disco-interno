@@ -32,7 +32,7 @@ const Albums = () => {
         <h2 className='albums-h2'>Os nossos lançamentos:</h2>
         {albums.map((album) => {
           return (
-                <div key={album.id} className='albums-show' data-aos="fade-up-right">
+                <div key={album.id} className='albums-show'>
                   <Link to={`/albums/${album.id}`} className='album-title'>
                     <div className="card-albums">
                       <div className='card-album-background'>

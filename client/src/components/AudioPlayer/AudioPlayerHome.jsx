@@ -26,9 +26,9 @@ const AudioPlayerHome = () => {
     setOneTrack(random);
   };
 
-  if (oneTrack.artist_id === 15) {
+  if (oneTrack.artist_id === 17) {
     return oneTrack.artist_id = 'Yakuza';
-  } else if (oneTrack.artist_id === 16) {
+  } else if (oneTrack.artist_id === 18) {
     return oneTrack.artist_id = 'Iguana Garcia';
   }
 
