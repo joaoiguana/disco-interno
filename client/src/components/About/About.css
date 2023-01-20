@@ -9,7 +9,7 @@
 .about-container {
   height: 70vh;
   overflow-y: scroll;
-  width: 60vw;
+  width: 70vw;
   padding: var(--margin-mediumlg);
   margin: 0 auto;
   background: var(--color-white);
@@ -22,5 +22,11 @@
 @media only screen and (max-width: 600px) {
   .about-container {
     height: 80vh;
+    width: 70vw;
   }
+}
+
+.about-text {
+  padding: var(--margin-mediumlg);
+  width: 50vw;
 }
