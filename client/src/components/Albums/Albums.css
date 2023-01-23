@@ -151,3 +151,13 @@
   background-color: var(--color-white);
   margin-top: 0;
 }
+
+.caroussel-items {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  white-space: nowrap;
+  /* width and height can be adjusted as needed */
+  width: 100%;
+  height: 300px;
+}

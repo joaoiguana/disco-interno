@@ -30,6 +30,7 @@ const Albums = () => {
     <div className='albums-outer-container'>
       <div className='albums-container'>
         <h2 className='albums-h2'>Os nossos lançamentos:</h2>
+        <div className="caroussel-items">
         {albums.map((album) => {
           return (
                 <div key={album.id} className='albums-show'>
@@ -45,6 +46,7 @@ const Albums = () => {
                 </div>
           );
         })}
+        </div>
       </div>
     </div>
   );
