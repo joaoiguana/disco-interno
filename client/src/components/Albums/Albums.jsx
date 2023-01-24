@@ -33,7 +33,7 @@ const Albums = () => {
         <div className="caroussel-items">
         {albums.map((album) => {
           return (
-                <div key={album.id} className='albums-show'>
+                <div key={album.id}>
                   <Link to={`/albums/${album.id}`} className='album-title'>
                     <div className="card-albums">
                       <div className='card-album-background'>
