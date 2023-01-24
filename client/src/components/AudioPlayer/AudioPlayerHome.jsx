@@ -26,12 +26,6 @@ const AudioPlayerHome = () => {
     setOneTrack(random);
   };
 
-  if (oneTrack.artist_id === 17) {
-    return oneTrack.artist_id = 'Yakuza';
-  } else if (oneTrack.artist_id === 18) {
-    return oneTrack.artist_id = 'Iguana Garcia';
-  }
-
   const toggleClass = () => {
     setActive(!isActive);
   };
@@ -53,7 +47,7 @@ const AudioPlayerHome = () => {
           <div className="song-info">
             <div className="text">
               <h2 className="song-title">{oneTrack.title}</h2>
-              <p className="artist-name">{oneTrack.artist_id}</p>
+              <p className="artist-name">{oneTrack.artist_name}</p>
             </div>
           </div>
           <ul className="toolbar" role="toolbar">
