@@ -25,6 +25,10 @@ html {
   --margin-mediumxs: 0.8rem;
   --margin-medium: 1rem;
   --margin-mediumlg: 1.2rem;
+
+  --margin-largexs: 2.5rem;
+  --margin-large: 3.5rem;
+  --margin-largexl: 5rem
 }
 
 body {
