@@ -1,5 +1,4 @@
 import React from 'react';
-import BackButton from '../BackButton/BackButton';
 import HomeFooter from '../Home/HomeFooter';
 import './About.css';
 
@@ -17,7 +16,6 @@ const About = () => {
             nesta promessa.
           </p>
           <p>Se sentires que esta label pode ser tua, envia-nos a tua música para: <strong>discointernolx@gmail.com</strong></p>
-          <BackButton />
         </div>
       </div>
       <HomeFooter />

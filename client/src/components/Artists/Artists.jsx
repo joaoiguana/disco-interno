@@ -32,7 +32,7 @@ const Artists = (props) => {
         <h2 className='artists-h2'>Os nossos artistas:</h2>
         {artists.map((artist) => {
           return (
-                <div key={artist.id} className='artists-show' data-aos="fade-up-right">
+                <div key={artist.id} className='artists-show'>
                   <Link to={`/artists/${artist.id}`} className='artist-name'>
                     <div className="card-artists">
                       <h2 className='card-artist-name'>{artist.name}</h2>
