@@ -14,16 +14,6 @@ nav {
   text-decoration: none;
 }
 
-@media (max-height: 680px)
-{
-  .logo {
-    width: 50px;
-  }
-  .nav-menus {
-    font-size: 14px;
-  }
-}
-
 .nav-logo {
   margin-left: 0.8rem;
 }
@@ -56,4 +46,19 @@ nav {
 
 .dropdown-menu-items:hover {
   background-color: #f1f1f1;
+}
+
+@media (max-height: 665px)
+{
+  .logo {
+    width: 50px;
+  }
+  .nav-menus {
+    font-size: 14px;
+  }
+  .dropdown-menu {
+    top: 19%;
+    left: 48%;
+    font-size: 14px;
+  }
 }

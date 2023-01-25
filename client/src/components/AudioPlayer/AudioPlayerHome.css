@@ -12,7 +12,7 @@
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
-@media (max-height: 680px)
+@media (max-height: 665px)
 {
   .card {
     max-width: 11.750rem;
@@ -125,10 +125,17 @@ i {
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 680px)
+@media (max-width: 665px)
 {
   .broadcast-button {
     left: 47%;
+  }
+}
+
+@media (max-height: 665px)
+{
+  .broadcast-button {
+    left: 20%;
   }
 }
 
