@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './AudioPlayer.css';
 
 const AudioPlayer = ({ audioUrl }) => {
@@ -6,6 +6,24 @@ const AudioPlayer = ({ audioUrl }) => {
   const progressBar = useRef();
   const progress = useRef();
   const audioElements = document.getElementsByTagName('audio');
+
+  useEffect(() => {
+    nextTrack()
+  }, [])
+
+  const nextTrack = () => {
+    let currentTrackIndex = 0;
+    audioElement.current.addEventListener('ended', () => {
+      currentTrackIndex++;
+      if (currentTrackIndex >= audioElements.length) {
+        currentTrackIndex = 0;
+      }
+      for (let i = 0; i < audioElements.length; i++) {
+        audioElements[i].pause();
+      }
+      audioElements[currentTrackIndex].play();
+    });
+  }
 
   const play = () => {
     for (let i = 0; i < audioElements.length; i++) {
@@ -19,7 +37,6 @@ const AudioPlayer = ({ audioUrl }) => {
   };
 
   const updateProgress = (e) => {
-    console.log(e.nativeEvent.srcElement)
     const duration = e.nativeEvent.srcElement.duration;
     const currentTime = e.nativeEvent.srcElement.currentTime;
     const progressPercent = (currentTime / duration) * 100;
