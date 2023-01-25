@@ -9,6 +9,7 @@
   grid-template-areas:
     "pic pic hidden1"
     "hidden2 hidden2 bio";
+    position: relative;
 }
 
 @media only screen and (max-width: 1200px) {

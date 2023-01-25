@@ -28,6 +28,7 @@ const ArtistsDetail = () => {
 
   return (
     <div className='artists-grid'>
+      <BackButton />
       <img src={artist.photo_url} alt="artist-pic"  className='artist-pic' data-aos="fade-up-right"/>
       <h1 className='hiddenY'>Y</h1>
       <img src='https://res.cloudinary.com/doa9kh79y/image/upload/v1672853287/disco%20interno/design-tools/rectangle_fit_cefuua.jpg' alt="invisible-box-left hidden" />
