@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
 import "aos/dist/aos.css";
 import './Albums.css';
 
@@ -15,8 +14,6 @@ const Albums = () => {
   const [albums, setAlbums] = useState([]);
 
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
     let mounted = true;
     getAPIData().then((items) => {
       if (mounted) {
