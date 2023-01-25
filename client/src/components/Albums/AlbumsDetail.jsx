@@ -61,7 +61,6 @@ const AlbumsDetail = () => {
           {filteredTracks.map((tracks) => {
             return (
               <div className='album-player' key={tracks.id}>
-                {/* <button><i class="fa-solid fa-play"></i></button> */}
                 <AudioPlayer audioUrl={tracks.audio_url} />
                 <p className='text-elipsis'>{tracks.tracks_number} - {tracks.title}</p>
               </div>
