@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import AudioPlayer from '../AudioPlayer/AudioPlayer';
+import BackButton from '../BackButton/BackButton';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
@@ -44,6 +45,7 @@ const AlbumsDetail = () => {
 
   return (
     <div className='albums-grid'>
+      <BackButton />
       <div className='album-bio' data-aos="fade-down">
         <img src={album.photo_url} alt="cover-art" className='cover-art' data-aos="fade-down" />
         <h3>{album.title} ({album.year}) - {album.catalog_number}</h3>
