@@ -7,7 +7,7 @@ const BackButton = () => {
 
   return (
     <div onClick={() => navigate(-1)}>
-      <button className='back-button'><i class="fa-solid fa-angles-left"></i></button>
+      <button className='back-button'><i className="fa-solid fa-angles-left"></i></button>
     </div>
   );
 }
