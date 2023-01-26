@@ -6,7 +6,7 @@ const AudioPlayer = ({ audioUrl }) => {
   const progressBar = useRef();
   const progress = useRef();
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-
+  const audioElements = document.getElementsByTagName('audio');
 
   useEffect(() => {
     nextTrack()
@@ -15,7 +15,7 @@ const AudioPlayer = ({ audioUrl }) => {
   const nextTrack = () => {
     audioElement.current.addEventListener('ended', () => {
       setCurrentTrackIndex(currentTrackIndex + 1);
-      if (currentTrackIndex >= audioUrls.length) {
+      if (currentTrackIndex >= audioElements.length) {
         setCurrentTrackIndex(0);
       }
     });
