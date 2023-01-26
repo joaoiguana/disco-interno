@@ -15,6 +15,7 @@
 @media (max-height: 665px)
 {
   .card {
+    top: 50%;
     max-width: 11.750rem;
   }
 }
