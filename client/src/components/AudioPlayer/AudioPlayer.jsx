@@ -1,34 +1,27 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './AudioPlayer.css';
 
 const AudioPlayer = ({ audioUrl }) => {
   const audioElement = useRef(null);
   const progressBar = useRef();
   const progress = useRef();
-  const audioElements = document.getElementsByTagName('audio');
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+
 
   useEffect(() => {
     nextTrack()
   }, [])
 
   const nextTrack = () => {
-    let currentTrackIndex = 0;
     audioElement.current.addEventListener('ended', () => {
-      currentTrackIndex++;
-      if (currentTrackIndex >= audioElements.length) {
-        currentTrackIndex = 0;
+      setCurrentTrackIndex(currentTrackIndex + 1);
+      if (currentTrackIndex >= audioUrls.length) {
+        setCurrentTrackIndex(0);
       }
-      for (let i = 0; i < audioElements.length; i++) {
-        audioElements[i].pause();
-      }
-      audioElements[currentTrackIndex].play();
     });
   }
 
   const play = () => {
-    for (let i = 0; i < audioElements.length; i++) {
-      audioElements[i].pause();
-    }
     audioElement.current.play();
   };
 
