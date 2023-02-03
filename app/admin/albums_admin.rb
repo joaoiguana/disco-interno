@@ -1,0 +1,55 @@
+Trestle.resource(:albums) do
+  menu :albums, icon: "fa fa-file-text-o", group: :blog_management
+
+  scope :all, default: true
+
+  table do
+    column :title
+    column :year
+    column :description
+    column :genre
+    column :catalog_number
+    column :artist_id
+    column :photo_url
+    column :artist_name
+    column :bandcamp_url
+    column :created_at
+    column :updated_at
+  end
+
+  form do
+    tab :album do
+      text_field :title
+    end
+  end
+
+  # Customize the table columns shown on the index view.
+  #
+  # table do
+  #   column :name
+  #   column :created_at, align: :center
+  #   actions
+  # end
+
+  # Customize the form fields shown on the new/edit views.
+  #
+  # form do |album|
+  #   text_field :name
+  #
+  #   row do
+  #     col { datetime_field :updated_at }
+  #     col { datetime_field :created_at }
+  #   end
+  # end
+
+  # By default, all parameters passed to the update and create actions will be
+  # permitted. If you do not have full trust in your users, you should explicitly
+  # define the list of permitted parameters.
+  #
+  # For further information, see the Rails documentation on Strong Parameters:
+  #   http://guides.rubyonrails.org/action_controller_overview.html#strong-parameters
+  #
+  params do |params|
+    params.require(:album).permit(:title, :year, :description, :genre, :catalog_number, :artist_id, :photo_url, :artist_name, :bandcamp_url)
+  end
+end
